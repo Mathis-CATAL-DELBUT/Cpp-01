@@ -3,14 +3,14 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: mcatal-d <mcatal-d@student.42.fr>          +#+  +:+       +#+         #
+#    By: mcatal-d <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/12 15:23:53 by mcatal-d          #+#    #+#              #
-#    Updated: 2023/05/12 17:55:56 by mcatal-d         ###   ########.fr        #
+#    Updated: 2023/05/13 21:35:42 by mcatal-d         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	= ex04
+NAME	= replace
 SRC		= main.cpp
 OBJ		= $(SRC:.cpp=.o)
 CC		= c++

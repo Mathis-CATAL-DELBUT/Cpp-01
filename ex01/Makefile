@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: mcatal-d <mcatal-d@student.42.fr>          +#+  +:+       +#+         #
+#    By: mcatal-d <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/11 02:08:48 by mcatal-d          #+#    #+#              #
-#    Updated: 2023/05/11 02:14:48 by mcatal-d         ###   ########.fr        #
+#    Updated: 2023/05/13 21:35:08 by mcatal-d         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,6 +22,9 @@ all: $(NAME)
 
 $(NAME): $(OBJ)
 	$(CC) $(CFLAGS) -o $(NAME) $(OBJ)
+
+%.o: %.cpp
+	$(CC) $(CFLAGS) -c $< -o $@
 	
 clean:
 	$(RM) $(OBJ)
